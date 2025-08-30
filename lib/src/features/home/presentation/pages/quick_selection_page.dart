@@ -28,7 +28,10 @@ class _QuickSelectionPageState extends State<QuickSelectionPage> {
           children: [
             SizedBox(height: 10),
             "Quick selection".getLatoTitle(
-                fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+            ),
           ],
         ),
       ),

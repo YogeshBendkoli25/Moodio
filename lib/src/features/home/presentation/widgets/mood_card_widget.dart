@@ -1,6 +1,4 @@
-import 'package:animated_emoji/animated_emoji.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:moodio/src/core/utils/font_extension.dart';
 
@@ -29,14 +27,14 @@ class MoodCardWidget extends StatelessWidget {
           end: Alignment.bottomRight,
           colors: [
             Color.fromRGBO(255, 255, 255, 0.80), // Slight highlight
-            Color.fromRGBO(234, 234, 234, 0.01), // Base color
+            Color.fromRGBO(234, 234, 234, 0.1), // Base color
             Color.fromRGBO(200, 200, 200, 0.05), // Subtle depth
           ],
           stops: [0.0, 1, 1.5],
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.3),
+            color: Colors.black.withValues(alpha: 0.7),
             offset: Offset(4, 4),
             blurRadius: 8,
             spreadRadius: 1,
@@ -51,7 +49,7 @@ class MoodCardWidget extends StatelessWidget {
         ],
         border: Border.all(
           color:
-              Colors.white.withValues(alpha: 0.1), // Subtle border for polish
+              Colors.white.withValues(alpha: 0.2), // Subtle border for polish
           width: 0.5,
         ),
       ),
