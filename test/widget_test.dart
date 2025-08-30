@@ -11,5 +11,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:moodio/main.dart';
 
 void main() {
-  
+  test('dummy test', () {
+    expect(1 + 1, 2);
+  });
 }
